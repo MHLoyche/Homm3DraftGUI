@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="images\Cities\" />
+    <Folder Include="images\Heroes\Conflux Heroes\" />
+    <Folder Include="images\Heroes\Cove Heroes\" />
+    <Folder Include="images\Heroes\Dungeon Heroes\" />
+    <Folder Include="images\Heroes\Factory Heroes\" />
+    <Folder Include="images\Heroes\Fortress Heroes\" />
+    <Folder Include="images\Heroes\Inferno Heroes\" />
+    <Folder Include="images\Heroes\Necropolis Heroes\" />
+    <Folder Include="images\Heroes\Tower Heroes\" />
+    <Folder Include="images\Heroes\Stronghold Heroes\" />
+    <Folder Include="images\Heroes\Rampart Heroes\" />
+  </ItemGroup>
+
+</Project>

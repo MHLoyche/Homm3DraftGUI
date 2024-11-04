@@ -18,12 +18,11 @@
         <Image x:Name="image4" HorizontalAlignment="Left" Margin="200,308,0,0" VerticalAlignment="Top" Height="75" Width="75" MouseDown="image4_clicked"/>
         <Image x:Name="image5" HorizontalAlignment="Left" Margin="357,308,0,0" VerticalAlignment="Top" Height="75" Width="76" MouseDown="image5_clicked"/>
         <Image x:Name="image6" HorizontalAlignment="Left" Margin="514,308,0,0" VerticalAlignment="Top" Height="75" Width="75" MouseDown="image6_clicked"/>
-        <TextBox x:Name="herobox1" HorizontalAlignment="Left" Margin="200,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="16" TextChanged="Herobox1_TextChanged" TextAlignment="Center" IsEnabled="False"/>
-        <TextBox x:Name="herobox2" HorizontalAlignment="Center" Margin="0,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="16" TextChanged="Herobox2_TextChanged" TextAlignment="Center" IsEnabled="False"/>
-        <TextBox x:Name="herobox3" HorizontalAlignment="Left" Margin="514,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="16" TextChanged="Herobox3_TextChanged" TextAlignment="Center" IsEnabled="False"/>
+        <TextBox x:Name="herobox1" HorizontalAlignment="Left" Margin="200,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="16" TextChanged="Herobox1_TextChanged" TextAlignment="Center" IsEnabled="False"/>
+        <TextBox x:Name="herobox2" HorizontalAlignment="Center" Margin="0,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="16" TextChanged="Herobox2_TextChanged" TextAlignment="Center" IsEnabled="False"/>
+        <TextBox x:Name="herobox3" HorizontalAlignment="Left" Margin="514,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="16" TextChanged="Herobox3_TextChanged" TextAlignment="Center" IsEnabled="False"/>
         <Label x:Name="Title" Content="HOMM3 - HOTA - Town &amp; Hero Drafter" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" IsEnabled="False" Background="#FF040404" FontWeight="Bold" Foreground="#FF00ECFD" Width="805" Height="37" HorizontalContentAlignment="Center"/>
         <Button x:Name="refresh_btn" Content="⟳" HorizontalAlignment="Left" Margin="460,230,0,0" VerticalAlignment="Top" Click="refresh_btnClick" FontSize="16" Height="30" Width="30"/>
         <Label Content="Click on the town you want to select" HorizontalAlignment="Center" Margin="0,76,0,0" VerticalAlignment="Top"/>
-
     </Grid>
 </Window>

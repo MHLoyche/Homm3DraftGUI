@@ -10,7 +10,8 @@ namespace Homm3Selector
         //Creating the used variables
         Boolean citySelected = false;
         int cityChosen;
-        
+        string cityPath = "C:\\Users\\AweSa\\source\\repos\\homm3draft\\Homm3Selector\\images\\Cities\\";
+
         //Calling the needed constructors
         Cities cities = new Cities();
         Heroes heroes = new Heroes();
@@ -45,9 +46,9 @@ namespace Homm3Selector
             myBitmap1.BeginInit();
             myBitmap2.BeginInit();
             myBitmap3.BeginInit();
-            myBitmap1.UriSource = new Uri(@"C:\Users\AweSa\source\repos\homm3\homm3draft-master\Homm3Selector\images\Cities\" + cities.getCity1() + ".png");
-            myBitmap2.UriSource = new Uri(@"C:\Users\AweSa\source\repos\homm3\homm3draft-master\Homm3Selector\images\Cities\" + cities.getCity2() + ".png");
-            myBitmap3.UriSource = new Uri(@"C:\Users\AweSa\source\repos\homm3\homm3draft-master\Homm3Selector\images\Cities\" + cities.getCity3() + ".png");
+            myBitmap1.UriSource = new Uri(cityPath + cities.getCity1() + ".png");
+            myBitmap2.UriSource = new Uri(cityPath + cities.getCity2() + ".png");
+            myBitmap3.UriSource = new Uri(cityPath + cities.getCity3() + ".png");
             myBitmap1.EndInit();
             myBitmap2.EndInit();
             myBitmap3.EndInit();
@@ -60,8 +61,6 @@ namespace Homm3Selector
             rollOutput_txtbox1.AppendText(cities.getCity1());
             rollOutput_txtbox2.AppendText(cities.getCity2());
             rollOutput_txtbox3.AppendText(cities.getCity3());
-
-
         }
 
         private void Select_btn_Click(object sender, RoutedEventArgs e)
@@ -94,9 +93,9 @@ namespace Homm3Selector
         //Method for image generation for the heroes
         private void setHeroImages(System.Windows.Controls.Image image1, System.Windows.Controls.Image image2, System.Windows.Controls.Image image3)
         {
-            if (cityChosen == 1) { heroes.generateHeroes(cities.getCityNr1()); }
-            else if (cityChosen == 2) { heroes.generateHeroes(cities.getCityNr2()); }
-            else if (cityChosen == 3) { heroes.generateHeroes(cities.getCityNr3()); }
+            if (cityChosen == 1) { heroes.generateHeroes(cities.getCity1()); }
+            else if (cityChosen == 2) { heroes.generateHeroes(cities.getCity2()); }
+            else if (cityChosen == 3) { heroes.generateHeroes(cities.getCity3()); }
 
             BitmapImage myBitmap1 = new BitmapImage();
             BitmapImage myBitmap2 = new BitmapImage();

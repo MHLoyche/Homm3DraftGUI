@@ -11,69 +11,69 @@ namespace Homm3Selector
         private int heroId2;
         private int heroId3;
         private string? path;
-        private string localPath = "C:\\Users\\AweSa\\source\\repos\\homm3\\homm3draft-master\\Homm3Selector\\images\\Heroes\\";
+        private string localPath = "C:\\Users\\AweSa\\source\\repos\\homm3draft\\Homm3Selector\\images\\Heroes\\";
         private string[]? heroes;
         private int heroListLength;
         private string? heroName1;
         private string? heroName2;
         private string? heroName3;
 
-        public void generateHeroes(int cityNumber)
+        public void generateHeroes(string city)
         {
             //Switch case to get the paths of the selected cities heroes.
-            switch (cityNumber)
+            switch (city)
             {
-                case 0:
+                case "Castle":
                     this.path = localPath + "Castle Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 1:
+                case "Conflux":
                     this.path = localPath + "Conflux Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 2:
+                case "Cove":
                     this.path = localPath + "Cove Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 3:
+                case "Dungeon":
                     this.path = localPath + "Dungeon Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 4:
+                case "Factory":
                     this.path = localPath + "Factory Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 5:
+                case "Fortress":
                     this.path = localPath + "Fortress Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 6:
+                case "Inferno":
                     this.path = localPath + "Inferno Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 7:
+                case "Necropolis":
                     this.path = localPath + "Necropolis Heroes\\";
                     heroes = Directory.GetFiles(path); 
                     heroListLength = heroes.Length;
                     break;
-                case 8:
+                case "Rampart":
                     this.path = localPath + "Rampart Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 9:
+                case "Stronghold":
                     this.path = localPath + "Stronghold Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;
                     break;
-                case 10:
+                case "Tower":
                     this.path = localPath + "Tower Heroes\\";
                     heroes = Directory.GetFiles(path);
                     heroListLength = heroes.Length;

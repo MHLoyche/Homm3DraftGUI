@@ -1,6 +1,4 @@
-﻿using System.Threading;
-
-namespace Homm3Selector
+﻿namespace Homm3Selector
 {
     internal class Cities
     {

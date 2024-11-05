@@ -5,24 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Homm3Selector"
         mc:Ignorable="d"
-        Title="MainWindow" Height="488" Width="805">
-    <Grid Background="#FFB3FFE5" Margin="0,0,0,-6">
-        <Button x:Name="roll_btn" Content="Roll Town" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top" FontSize="16" Width="100" Height="30" Click="roll_btn_Click"/>
+        Title="HOMM3.JC.Draft" Height="488" Width="805">
+    <Grid x:Name="bgGrid" Margin="0,0,0,-6">
+        <Button x:Name="roll_btn" Content="Roll Town" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top" FontSize="16" Width="100" Height="30" Click="roll_btn_Click" Foreground="Black" Background="#FFF79505" FontWeight="Bold"/>
         <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="100,135,0,0" VerticalAlignment="Top" Width="100" MouseDown="image1_clicked"/>
         <Image x:Name="image2" HorizontalAlignment="Left" Height="100" Margin="344,135,0,0" VerticalAlignment="Top" Width="100" MouseDown="image2_clicked"/>
         <Image x:Name="image3" HorizontalAlignment="Left" Height="100" Margin="588,135,0,0" VerticalAlignment="Top" Width="100" MouseDown="image3_clicked"/>
-        <Button x:Name="Select_btn" Content="Select" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" FontSize="16" Width="90" Height="30" Click="Select_btn_Click"/>
+        <Button x:Name="Select_btn" Content="Select" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" FontSize="16" Width="90" Height="30" Click="Select_btn_Click" Background="#FFF79505" FontWeight="Bold"/>
         <TextBox x:Name="rollOutput_txtbox1" HorizontalAlignment="Left" Margin="100,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="30" TextChanged="rollOutput_txt1" FontSize="16" TextAlignment="Center" FontWeight="Bold" IsEnabled="False"/>
         <TextBox x:Name="rollOutput_txtbox2" HorizontalAlignment="Center" Margin="0,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="30" TextChanged="rollOutput_txt2" FontSize="16" TextAlignment="Center" FontWeight="Bold" IsEnabled="False"/>
         <TextBox x:Name="rollOutput_txtbox3" HorizontalAlignment="Left" Margin="588,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="30" TextChanged="rollOutput_txt3" TextAlignment="Center" FontSize="16" FontWeight="Bold" IsEnabled="False"/>
-        <Image x:Name="image4" HorizontalAlignment="Left" Margin="200,308,0,0" VerticalAlignment="Top" Height="75" Width="75" MouseDown="image4_clicked"/>
-        <Image x:Name="image5" HorizontalAlignment="Left" Margin="357,308,0,0" VerticalAlignment="Top" Height="75" Width="76" MouseDown="image5_clicked"/>
-        <Image x:Name="image6" HorizontalAlignment="Left" Margin="514,308,0,0" VerticalAlignment="Top" Height="75" Width="75" MouseDown="image6_clicked"/>
+        <Image x:Name="image4" HorizontalAlignment="Left" Margin="211,308,0,0" VerticalAlignment="Top" Height="75" Width="75" MouseDown="image4_clicked"/>
+        <Image x:Name="image5" HorizontalAlignment="Left" Margin="357,308,0,0" VerticalAlignment="Top" Height="75" Width="75" MouseDown="image5_clicked"/>
+        <Image x:Name="image6" HorizontalAlignment="Left" Margin="526,308,0,0" VerticalAlignment="Top" Height="75" Width="75" MouseDown="image6_clicked"/>
         <TextBox x:Name="herobox1" HorizontalAlignment="Left" Margin="200,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="16" TextChanged="Herobox1_TextChanged" TextAlignment="Center" IsEnabled="False"/>
         <TextBox x:Name="herobox2" HorizontalAlignment="Center" Margin="0,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="16" TextChanged="Herobox2_TextChanged" TextAlignment="Center" IsEnabled="False"/>
         <TextBox x:Name="herobox3" HorizontalAlignment="Left" Margin="514,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="16" TextChanged="Herobox3_TextChanged" TextAlignment="Center" IsEnabled="False"/>
-        <Label x:Name="Title" Content="HOMM3 - HOTA - Town &amp; Hero Drafter" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" IsEnabled="False" Background="#FF040404" FontWeight="Bold" Foreground="#FF00ECFD" Width="805" Height="37" HorizontalContentAlignment="Center"/>
-        <Button x:Name="refresh_btn" Content="⟳" HorizontalAlignment="Left" Margin="460,230,0,0" VerticalAlignment="Top" Click="refresh_btnClick" FontSize="16" Height="30" Width="30"/>
-        <Label Content="Click on the town you want to select" HorizontalAlignment="Center" Margin="0,76,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Title" Content="HOMM3 - HOTA - Jebus Cross - Town &amp; Hero Drafter" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="#FFF5C007" Width="805" Height="37" HorizontalContentAlignment="Center" IsEnabled="False"/>
+        <Button x:Name="refresh_btn" Content="⟳" HorizontalAlignment="Left" Margin="452,230,0,0" VerticalAlignment="Top" Click="refresh_btnClick" FontSize="16" Height="30" Width="30" Background="#FFF79505"/>
+        <Label Content="Click on the town you want to select" HorizontalAlignment="Center" Margin="0,76,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\AweSa\source\repos\homm3draft\Homm3Selector\images\Common\Background.png"/>
+        </Grid.Background>
     </Grid>
 </Window>

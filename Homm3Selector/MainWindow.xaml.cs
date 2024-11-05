@@ -16,6 +16,8 @@ namespace Homm3Selector
         Cities cities = new Cities();
         Heroes heroes = new Heroes();
 
+        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -196,6 +198,11 @@ namespace Homm3Selector
         }
 
         private void Herobox3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void bgGrid_DpiChanged(object sender, DpiChangedEventArgs e)
         {
 
         }

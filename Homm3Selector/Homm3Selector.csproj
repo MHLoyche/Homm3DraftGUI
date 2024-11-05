@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="artslot.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="images\Cities\" />
     <Folder Include="images\Heroes\Conflux Heroes\" />
     <Folder Include="images\Heroes\Cove Heroes\" />
@@ -20,6 +24,10 @@
     <Folder Include="images\Heroes\Tower Heroes\" />
     <Folder Include="images\Heroes\Stronghold Heroes\" />
     <Folder Include="images\Heroes\Rampart Heroes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="artslot.png" />
   </ItemGroup>
 
 </Project>

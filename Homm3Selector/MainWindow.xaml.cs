@@ -17,7 +17,6 @@ namespace Homm3Selector
         Cities cities = new Cities();
         Heroes heroes = new Heroes();
 
-
         public MainWindow()
         {
             InitializeComponent();
@@ -31,16 +30,16 @@ namespace Homm3Selector
             image4.Source = null;
             image5.Source = null;
             image6.Source = null;
-            image1.IsEnabled = true;
-            image2.IsEnabled = true;
-            image3.IsEnabled = true;
             citySelected = false;
             heroBoxClear();
 
-            //highlighting the newly rolled cities
+            //highlighting and enabling the newly rolled cities
             image1.Opacity = 1;
             image2.Opacity = 1;
             image3.Opacity = 1;
+            image1.IsEnabled = true;
+            image2.IsEnabled = true;
+            image3.IsEnabled = true;
 
             //Setting the image sources for the cities
             BitmapImage myBitmap1 = new BitmapImage();
@@ -125,6 +124,7 @@ namespace Homm3Selector
             herobox3.AppendText(heroes.getHeroname3());
         }
 
+        //creating clickable images and ensuring they are only clickable once. Highlighting the chosen town and enabling the select button.
         private void image1_clicked(object sender, MouseButtonEventArgs e)
         {
             image1.Opacity = 1;
@@ -133,7 +133,6 @@ namespace Homm3Selector
             image1.IsEnabled = false;
             image2.IsEnabled = false;
             image3.IsEnabled = false;
-
             citySelected = true;
             selectNotUsed = true;
             cityChosen = 1;
@@ -147,7 +146,6 @@ namespace Homm3Selector
             image1.IsEnabled = false;
             image2.IsEnabled = false;
             image3.IsEnabled = false;
-
             citySelected = true;
             selectNotUsed = true;
             cityChosen = 2;
@@ -161,7 +159,6 @@ namespace Homm3Selector
             image1.IsEnabled = false;
             image2.IsEnabled = false;
             image3.IsEnabled = false;
-
             citySelected = true;
             selectNotUsed = true;
             cityChosen = 3;
@@ -193,6 +190,7 @@ namespace Homm3Selector
             heroBoxClear();
             cityBoxClear();
         }
+
         private void image4_clicked(object sender, MouseButtonEventArgs e)
         {
 
@@ -202,6 +200,7 @@ namespace Homm3Selector
         {
 
         }
+
         private void image6_clicked(object sender, MouseButtonEventArgs e)
         {
 
@@ -233,11 +232,6 @@ namespace Homm3Selector
         }
 
         private void Herobox3_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void bgGrid_DpiChanged(object sender, DpiChangedEventArgs e)
         {
 
         }

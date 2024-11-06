@@ -24,8 +24,9 @@
         <Label x:Name="Title" Content="HOMM3 - HOTA - Jebus Cross - Town &amp; Hero Drafter" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="#FFF5C007" Width="805" Height="37" HorizontalContentAlignment="Center" IsEnabled="False"/>
         <Button x:Name="refresh_btn" Content="⟳" HorizontalAlignment="Center" Margin="130,230,0,0" VerticalAlignment="Top" Click="refresh_btnClick" FontSize="16" Height="30" Width="30" Background="#FFF79505"/>
         <Label Content="Click on the town you want to select" HorizontalAlignment="Center" Margin="0,76,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="resetbtn" Content="Restart" HorizontalAlignment="center" Margin="710,407,0,0" VerticalAlignment="Top" FontSize="16" Width="70" Height="30" Click="restart_btn_Click" Foreground="Black" Background="#FFF79505" FontWeight="Bold"/>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\AweSa\source\repos\homm3draft\Homm3Selector\images\Common\Background.png"/>
+            <ImageBrush ImageSource="C:\Users\AweSa\Source\Repos\Homm3DraftGUI\Homm3Selector\images\Common\Background.png"/>
         </Grid.Background>
     </Grid>
 </Window>

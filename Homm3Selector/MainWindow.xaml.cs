@@ -9,14 +9,14 @@ namespace Homm3Selector
     {
         //Creating the used variables
         Boolean citySelected = false;
+        Boolean selectNotUsed = true;
         int cityChosen;
-        string cityPath = "C:\\Users\\AweSa\\source\\repos\\homm3draft\\Homm3Selector\\images\\Cities\\";
+        string cityPath = "C:\\Users\\AweSa\\Source\\Repos\\Homm3DraftGUI\\Homm3Selector\\images\\Cities\\";
 
         //Calling the needed constructors
         Cities cities = new Cities();
         Heroes heroes = new Heroes();
 
-        
 
         public MainWindow()
         {
@@ -27,9 +27,7 @@ namespace Homm3Selector
         {
             //Calling the setCities method and clearing the text boxes and images incase this is not the first roll
             cities.setCities();
-            rollOutput_txtbox1.Clear();
-            rollOutput_txtbox2.Clear();
-            rollOutput_txtbox3.Clear();
+            cityBoxClear();
             image4.Source = null;
             image5.Source = null;
             image6.Source = null;
@@ -68,7 +66,7 @@ namespace Homm3Selector
         private void Select_btn_Click(object sender, RoutedEventArgs e)
         {
             //Making sure you can only click select if a city has been chosen
-            if (citySelected == true)
+            if (citySelected == true && selectNotUsed == true)
             {
                 //Calling city select to remove the chosen city from the list
                 cities.citySelect(cityChosen);
@@ -78,6 +76,8 @@ namespace Homm3Selector
 
                 //set the hero images
                 setHeroImages(image4, image5, image6);
+
+                selectNotUsed = false;
             }
         }
 
@@ -128,6 +128,7 @@ namespace Homm3Selector
             image3.Opacity = 0.5;
 
             citySelected = true;
+            selectNotUsed = true;
             cityChosen = 1;
         }
 
@@ -138,6 +139,7 @@ namespace Homm3Selector
             image3.Opacity = 0.5;
 
             citySelected = true;
+            selectNotUsed = true;
             cityChosen = 2;
         }
 
@@ -148,6 +150,7 @@ namespace Homm3Selector
             image3.Opacity = 1;
 
             citySelected = true;
+            selectNotUsed = true;
             cityChosen = 3;
         }
 
@@ -158,6 +161,25 @@ namespace Homm3Selector
             herobox3.Clear();
         }
 
+        private void cityBoxClear()
+        {
+            rollOutput_txtbox1.Clear();
+            rollOutput_txtbox2.Clear();
+            rollOutput_txtbox3.Clear();
+        }
+
+        private void restart_btn_Click(object sender, RoutedEventArgs e)
+        {
+            cities.fillList();
+            image1.Source = null;
+            image2.Source = null;
+            image3.Source = null;
+            image4.Source = null;
+            image5.Source = null;
+            image6.Source = null;
+            heroBoxClear();
+            cityBoxClear();
+        }
         private void image4_clicked(object sender, MouseButtonEventArgs e)
         {
 

@@ -53,6 +53,13 @@
             }
         }
 
+        public void fillList()
+        {
+            this.cities = ["Castle", "Conflux", "Cove", "Dungeon", "Factory", "Fortress", "Inferno", "Necropolis", "Rampart", "Stronghold", "Tower"];
+            this.city1 = "not set";
+            this.city2 = "not set";
+            this.city3 = "not set";
+    }
         public string getCity1(){return city1;}
         public string getCity2(){return city2;}
         public string getCity3(){return city3;}

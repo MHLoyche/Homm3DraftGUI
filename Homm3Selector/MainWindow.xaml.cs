@@ -31,6 +31,9 @@ namespace Homm3Selector
             image4.Source = null;
             image5.Source = null;
             image6.Source = null;
+            image1.IsEnabled = true;
+            image2.IsEnabled = true;
+            image3.IsEnabled = true;
             citySelected = false;
             heroBoxClear();
 
@@ -77,6 +80,7 @@ namespace Homm3Selector
                 //set the hero images
                 setHeroImages(image4, image5, image6);
 
+                //Making sure select can only be used once
                 selectNotUsed = false;
             }
         }
@@ -126,6 +130,9 @@ namespace Homm3Selector
             image1.Opacity = 1;
             image2.Opacity = 0.5;
             image3.Opacity = 0.5;
+            image1.IsEnabled = false;
+            image2.IsEnabled = false;
+            image3.IsEnabled = false;
 
             citySelected = true;
             selectNotUsed = true;
@@ -137,6 +144,9 @@ namespace Homm3Selector
             image1.Opacity = 0.5;
             image2.Opacity = 1;
             image3.Opacity = 0.5;
+            image1.IsEnabled = false;
+            image2.IsEnabled = false;
+            image3.IsEnabled = false;
 
             citySelected = true;
             selectNotUsed = true;
@@ -148,6 +158,9 @@ namespace Homm3Selector
             image1.Opacity = 0.5;
             image2.Opacity = 0.5;
             image3.Opacity = 1;
+            image1.IsEnabled = false;
+            image2.IsEnabled = false;
+            image3.IsEnabled = false;
 
             citySelected = true;
             selectNotUsed = true;

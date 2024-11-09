@@ -11,7 +11,7 @@ namespace Homm3Selector
         Boolean citySelected = false;
         Boolean selectNotUsed = true;
         int cityChosen;
-        string cityPath = "C:\\Users\\AweSa\\Source\\Repos\\Homm3DraftGUI\\Homm3Selector\\images\\Cities\\";
+        string cityPath = "C:\\Users\\AweSa\\source\\repos\\homm3draft\\Homm3Selector\\images\\Cities\\";
 
         //Calling the needed constructors
         Cities cities = new Cities();

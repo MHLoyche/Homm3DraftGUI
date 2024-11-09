@@ -11,7 +11,7 @@ namespace Homm3Selector
         private int heroId2;
         private int heroId3;
         private string? path;
-        private string localPath = "C:\\Users\\AweSa\\Source\\Repos\\Homm3DraftGUI\\Homm3Selector\\images\\Heroes\\";
+        private string localPath = "C:\\Users\\AweSa\\source\\repos\\homm3draft\\Homm3Selector\\images\\Heroes\\";
         private string[]? heroes;
         private int heroListLength;
         private string? heroName1;
